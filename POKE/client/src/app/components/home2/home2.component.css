@@ -1,0 +1,86 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    background-color: black;
+    color: rgb(255, 0, 0);
+    min-height: 100vh;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/261/1001/110/pokemon-images-for-desktop-background-wallpaper-preview.jpg");
+    background-size: 10rem;
+  }
+ 
+
+
+
+  
+  .row{
+      margin-top: 8vh;
+  }
+  
+ 
+  nav{
+    width: 100%;
+    background: #C90505;
+    overflow: auto;
+}
+nav a{
+    width: 50px;
+    display: block;
+    padding: 300px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+nav li{
+    float:left;
+        
+}
+nav a{
+    width: 100px;
+    display: block;
+    padding: 20px 200px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+nav a:hover {
+background: #020202;
+transition: 0.5s;
+text-transform: none;
+} 
+.pok img{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.LOC{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -100px;
+}
+.LOC2{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 360px;
+}
+.logo img{
+			position: absolute;
+			margin-top: 150px;
+			margin-left: 1285px;
+		}
+		.primer img{
+			position: absolute;
+			margin-top: 150px;
+			margin-left: 0px;
+		}
+       .navbar-nav {
+margin-left: 475px;
+       }
+       .vid{
+margin-top: 20PX;
+       }
+
+       

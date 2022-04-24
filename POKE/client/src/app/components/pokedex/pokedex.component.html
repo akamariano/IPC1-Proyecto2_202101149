@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://cdn.icon-icons.com/icons2/851/PNG/128/Pokeball_icon-icons.com_67533.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#">POKEDEX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Todos<span class="sr-only"> </span></a>
+            </li>
+          </ul>
+    
+        </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button routerLink="buscar" class="btn btn-outline-success my-2 my-sm-0">Buscar</button>
+          </form>
+          
+      </nav>    
+  <div class="container" *ngFor="let dato of datosPoke" >
+    <app-cards [datoPokemon]="dato"></app-cards>
+</div>
+  
+</body>
+</html>

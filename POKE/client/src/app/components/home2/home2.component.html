@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://cdn.icon-icons.com/icons2/851/PNG/128/Pokeball_icon-icons.com_67533.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+	
+  <div class="logo"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1026px-Pok%C3%A9_Ball_icon.svg.png" alt=""width="62.5" height="62.5"></a>
+	</div>
+	<div class="primer"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1026px-Pok%C3%A9_Ball_icon.svg.png" alt=""width="62.5" height="62.5"></a>
+	</div>
+  <div align="center" >
+  <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+</div>
+  <div align="center" >
+  <input id="buscar" type="text" [(ngModel)]="value">
+    <button (click)="Obtener()" class="btn btn-danger mx-2">Buscar</button>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      
+      <div align="center" >
+        <button (click)="ObtenerPoke()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div align="center" ></div>
+          <ul class="navbar-nav">
+            <li class="LOC">
+              <a class="nav-link"><img src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt=""width="120" height="40"><span class="sr-only"> </span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link"  (click)="ObtenerPoke()">Todos<span class="sr-only"> </span></a>
+            </li>
+            <li class="nav-item active1">
+              <a class="nav-link" (click)="ObtenerPokemonsFuego()">Fuego<span class="sr-only"> </span></a>
+            </li>
+            <li class="nav-item active2">
+              <a class="nav-link"  (click)="ObtenerPokemonsAgua()">Agua<span class="sr-only"> </span></a>
+            </li>
+            <li class="nav-item active3">
+              <a class="nav-link"  (click)="ObtenerPokemonsHierba()">Hierba<span class="sr-only"> </span></a>
+            </li>
+            <li class="LOC2">
+              <a class="nav-link" ><img src="https://raw.githubusercontent.com/sleduardo20/pokedex/0671af442dff1d8f7141e49eb83b438885bbc9e9/public/img/logo.svg" alt=""width="120" height="40"><span class="sr-only"> </span></a>
+            </li>
+          </ul>
+        </div>
+    
+        
+        
+          
+      </nav>    
+  <div class="container" *ngFor="let dato of datosPoke"align="center">
+    <app-cards [datoPokemon]="dato"></app-cards>
+    
+</div>
+<div class="vid" align="center" >
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/uDIoEbbFKAY?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt=""width="800" height="400"></iframe>
+</div>
+</body>
+</html>

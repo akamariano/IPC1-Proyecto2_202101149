@@ -1,0 +1,30 @@
+body{
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+}
+
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(111, 112, 41);
+    background: linear-gradient(90deg, rgb(112, 41, 41) 0%, rgb(0, 0, 0) 100%);
+}
+.card h1,h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+label {
+    color: rgb(0, 0, 0);
+}
+
+.pokemon{
+    height: 300px;
+    width: 400px;
+}
